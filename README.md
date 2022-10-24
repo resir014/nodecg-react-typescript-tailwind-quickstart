@@ -23,13 +23,17 @@ nodecg setup
 On your root NodeCG bundle, install the bundle via the NodeCG CLI
 
 ```bash
-nodecg install resir014/nodecg-react-typescript-tailwind-quickstart
+cd bundles
+git clone https://github.com/resir014/nodecg-react-typescript-tailwind-quickstart.git my-bundle-name
 ```
 
-Then, rename the bundle to your liking after installing.
+Then, update the bundle's `package.json` to match the new bundle name.
 
-- On the `bundles` folder, rename the `nodecg-react-typescript-tailwind-quickstart` to your new bundle name.
-- Then, go to the bundle's `package.json` and change the package name to match the new bundle name.
+```json
+{
+  "name": "my-bundle-name"
+}
+```
 
 ### Start developing
 

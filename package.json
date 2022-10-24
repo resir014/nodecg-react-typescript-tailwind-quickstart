@@ -21,7 +21,8 @@
   "repository": "https://github.com/nodecg/nodecg.git",
   "license": "Unlicense",
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack",
+    "clean": "rimraf dashboard graphics",
+    "build": "yarn clean && cross-env NODE_ENV=production webpack",
     "start": "yarn watch",
     "watch": "cross-env NODE_ENV=development webpack --watch"
   },
@@ -42,7 +43,6 @@
     "@typescript-eslint/parser": "^5.40.1",
     "autoprefixer": "^10.4.12",
     "babel-loader": "^8.2.5",
-    "clean-webpack-plugin": "^4.0.0",
     "cross-env": "^7.0.3",
     "css-loader": "^6.7.1",
     "css-minimizer-webpack-plugin": "^4.2.2",
@@ -58,6 +58,7 @@
     "postcss-loader": "^7.0.1",
     "postcss-preset-env": "^7.8.2",
     "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
     "style-loader": "^3.3.1",
     "stylelint": "^14.14.0",
     "stylelint-config-recommended": "^9.0.0",

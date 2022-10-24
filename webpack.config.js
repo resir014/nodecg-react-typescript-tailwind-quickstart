@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -49,7 +48,7 @@ const baseConfig = {
     minimize: true,
     minimizer: [new TerserPlugin(), new CssMinimizerPlugin()],
   },
-  plugins: [new CleanWebpackPlugin(), new ForkTsCheckerWebpackPlugin()],
+  plugins: [new ForkTsCheckerWebpackPlugin()],
 };
 
 /**

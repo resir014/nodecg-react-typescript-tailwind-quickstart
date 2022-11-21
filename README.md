@@ -4,6 +4,14 @@
 
 ## Getting started
 
+### Prerequisites
+
+You will need:
+
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en/) (v16.0+)
+- [Yarn](https://classic.yarnpkg.com/lang/en/) (v1)
+
 ### Install NodeCG
 
 Follow [this guide](https://www.nodecg.dev/docs/installing) to install and run NodeCG locally.
@@ -25,6 +33,8 @@ On your root NodeCG bundle, install the bundle via the NodeCG CLI
 ```bash
 cd bundles
 git clone https://github.com/resir014/nodecg-react-typescript-tailwind-quickstart.git my-bundle-name
+cd my-bundle-name
+yarn
 ```
 
 Then, update the bundle's `package.json` to match the new bundle name.
